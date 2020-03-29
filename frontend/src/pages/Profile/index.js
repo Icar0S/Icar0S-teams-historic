@@ -62,33 +62,33 @@ export default function Profile(){
             <h1>Partidas Cadastradas</h1>
 
             <ul>
-                {plays.map(play => (
-                    <li key={play.id}>
+                {plays.map(plays => (
+                    <li key={plays.id}>
                     <strong>Confronto</strong>
-                    <p>{play.confronto}</p>
+                    <p>{plays.confronto}</p>
 
                     <strong>Campeonato</strong>
-                    <p>{play.campeonato}</p>
+                    <p>{plays.campeonato}</p>
 
                     <strong>Descrição</strong>
-                    <p>{play.descricao}</p>
+                    <p>{plays.descricao}</p>
 
                     <strong>Gols Casa</strong>
-                    <p>{play.placar_casa}</p>
+                    <p>{plays.placar_casa}</p>
 
                     <strong>Gols Fora</strong>
-                    <p>{play.placar_fora}</p>
+                    <p>{plays.placar_fora}</p>
 
                     <strong>Estádio</strong>
-                    <p>{play.estadio}</p>
+                    <p>{plays.estadio}</p>
 
                     <strong>Público Total</strong>
-                    <p>{play.publico}</p>
+                    <p>{plays.publico}</p>
 
                     <strong>Renda da Partida</strong>
-                    <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(play.renda)}</p>
+                    <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(plays.renda)}</p>
 
-                    <button onClick={() => handleDeletePlay(play.id)} type="button">
+                    <button onClick={() => handleDeletePlay(plays.id)} type="button">
                         <FiTrash2 size={20} color="a8a8b3" />
                     </button>
                 </li>

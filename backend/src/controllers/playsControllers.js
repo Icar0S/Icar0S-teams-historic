@@ -27,14 +27,15 @@ module.exports = {
     },
 
     async create(request, response){
-        const {confronto, campeonato, descricao, placar, estadio, publico, renda} = request.body;
+        const {confronto, campeonato, descricao, placar_casa, placar_fora, estadio, publico, renda} = request.body;
         const time_id = request.headers.authorization;
 
         const [id] = await connection('plays').insert({
             confronto,
             campeonato,
             descricao,
-            placar,
+            placar_casa,
+            placar_fora,
             estadio,
             publico,
             renda,

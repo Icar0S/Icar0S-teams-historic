@@ -6,7 +6,8 @@ exports.up = function(knex) {
         table.string('confronto').notNullable();
         table.string('campeonato').notNullable();
         table.string('descricao').notNullable();
-        table.string('placar').notNullable();
+        table.integer('placar_casa').unsigned().notNullable();
+        table.integer('placar_fora').unsigned().notNullable();
         table.string('estadio').notNullable();
         table.decimal('publico').notNullable();
         table.string('renda').notNullable();
