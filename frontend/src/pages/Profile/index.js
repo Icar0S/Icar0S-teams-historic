@@ -6,7 +6,7 @@ import api from '../../services/api';
 
 import './styles.css';
 
-import logoImag from '../../assets/logooficialUlt.png';
+import logoImag from '../../assets/logooficialUlt.png'; //LOGO
 
 export default function Profile(){
     const [plays, setPlays] = useState([]);

@@ -8,7 +8,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import { View, Text, Image, TouchableOpacity, Linking, ScrollView } from 'react-native';
 import * as MailComposer from 'expo-mail-composer';
 
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo10.png'; //LOGO
 import styles from './styles';
 
 
